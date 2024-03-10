@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class PropertyConfig {
 
     @Value("${TOKEN_VALIDATION_DURATION}")
-    private String tokenValidationDuration;
+    private long tokenValidationDuration;
 
     @Value("${TOKEN_AUTH_SECRET_KEY}")
     private String tokenAuthSecretKey;

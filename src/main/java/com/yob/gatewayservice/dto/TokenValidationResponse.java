@@ -9,14 +9,14 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class TokenGenerationResponse {
+public class TokenValidationResponse {
 
-    private TokenGenerationResp tokenGenerationResp;
+    private TokenValidationResp tokenValidationResp;
 
     @Data
-    public static class TokenGenerationResp {
+    public static class TokenValidationResp {
         private TokenResMetaData metaData;
-        private List<TokenRespResourceData> resourceData;
+        private List<TokenValidationResourceData> resourceData;
     }
 
     @Data
@@ -24,15 +24,13 @@ public class TokenGenerationResponse {
         private String status;
         private String message;
         private String version;
-        private String code;
-        private String time;
+        private String statusCode;
     }
 
     @Data
-    public static class TokenRespResourceData {
-        private String code;
-        private String token;
-        private long expiryInMin;
-
+    public static class TokenValidationResourceData{
+       private boolean tokenValidated;
+       private String  code;
     }
+
 }

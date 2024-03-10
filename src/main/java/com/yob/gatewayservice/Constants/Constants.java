@@ -9,4 +9,6 @@ public class Constants {
     public static final String  STATUS_CODE_ERROR = "01";
     public static final String  API_VERSION_TOKEN = "V1";
     public static final String  STATUS_CODE_100 = "100";
+
+    public static final  String STATUS_CODE_900 = "900";
 }
