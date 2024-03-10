@@ -11,4 +11,7 @@ public class PropertyConfig {
     @Value("${TOKEN_VALIDATION_DURATION}")
     private String tokenValidationDuration;
 
+    @Value("${TOKEN_AUTH_SECRET_KEY}")
+    private String tokenAuthSecretKey;
+
 }
