@@ -1,6 +1,11 @@
 package com.yob.gatewayservice.dto;
 
-public class VerifyMobileResponse {
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@EqualsAndHashCode(callSuper = true)
+@Data
+public class VerifyMobileResponse extends  CommonResponse{
     private String refNum;
     private String mobileNumber;
     private boolean isPost = false;     // will check later

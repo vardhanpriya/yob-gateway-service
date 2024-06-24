@@ -18,4 +18,7 @@ public class PropertyConfig {
     @Value("${REST_CALL_RETRY_COUNT}")
     private int restCallRetryCount;
 
+    @Value("${RESUME_MOBILE_VERIFY_URL}")
+    private String resumeMobileVerifyUrl;
+
 }
