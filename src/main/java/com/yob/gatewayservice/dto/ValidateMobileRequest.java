@@ -3,7 +3,6 @@ package com.yob.gatewayservice.dto;
 import lombok.Data;
 
 @Data
-public class BaseResponse {
+public class ValidateMobileRequest {
 
-    protected String status;
 }

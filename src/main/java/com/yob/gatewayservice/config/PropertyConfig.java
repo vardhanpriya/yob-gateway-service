@@ -14,4 +14,8 @@ public class PropertyConfig {
     @Value("${TOKEN_AUTH_SECRET_KEY}")
     private String tokenAuthSecretKey;
 
+
+    @Value("${REST_CALL_RETRY_COUNT}")
+    private int restCallRetryCount;
+
 }
